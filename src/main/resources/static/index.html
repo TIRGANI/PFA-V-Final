@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Watering</title>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='vendor/bootstrap-4.1/bootstrap.min.css'>
+
+    <link rel='stylesheet' href='vendor/font-awesome-5/css/fontawesome-all.min.css'>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/theme.css">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="style/main.css">
+
+    <script src='vendor/jquery-3.2.1.min.js'></script>
+    <script src='vendor/bootstrap-4.1/popper.min.js'></script>
+    <script src='vendor/bootstrap-4.1/bootstrap.min.js'></script>
+    <script src="vendor/datatable/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="vendor/datatable/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+    <script src="vendor/chartjs/Chart.min.js"></script>
+
+</head>
+
+<body>
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="#"> <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <a href="./" class="h2 pt-2" style="color: #0D6B20">Smart Watering</a>
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-header">
+                <div class="user-pic">
+                    <img class="img-responsive img-rounded" src="img/logo.jpg" alt="User picture">
+                </div>
+                <div class="user-info">
+                        <span class="user-name"> <strong>NOM </strong>
+						</span> <span class="user-role">ROLE</span> <span class="user-status">
+							<i class="fa fa-circle"></i> <span>Online</span>
+                        </span>
+                </div>
+            </div>
+            <!-- sidebar-header  -->
+
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu"><span>Management</span></li>
+
+                    <li><a href="./index.html" onclick="show('statistiques')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Statistical</a></li>
+
+                    <li class="adminp"><a href="./index.html" onclick="show('gestionusers')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>User Management</a></li>
+
+                    <li><a href="./index.html" onclick="show('ferme')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Farms</a></li>
+
+                    <li><a href="./index.html" onclick="show('parcelle')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Plots</a></li>
+
+                    <li><a href="./index.html" onclick="show('plante')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Plants</a></li>
+
+                    <li><a href="./index.html" onclick="show('typeplante')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Types of plants</a></li>
+
+                    <li><a href="./index.html" onclick="show('plantages')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>
+                        Planting</a></li>
+
+
+                    <li><a href="./index.html" onclick="show('typeSole')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Type of Soil</a></li>
+
+                    <li><a href="./index.html" onclick="show('alerte')"><i
+                            class="zmdi zmdi-hc-1x zmdi-group-work"></i>Alerts</a></li>
+
+
+
+
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+            <a href="/logout"> <i class="fa fa-power-off"></i> <span>Logout</span>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+        <div class="container-fluid" id="main-content"></div>
+
+    </main>
+    <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+<script src="script/redirect.js"></script>
+<script src="vendor/slick/slick.min.js">
+</script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="vendor/animsition/animsition.min.js"></script>
+<script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+</script>
+<script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendor/counter-up/jquery.counterup.min.js">
+</script>
+<script src="vendor/circle-progress/circle-progress.min.js"></script>
+<script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="vendor/chartjs/Chart.bundle.min.js"></script>
+<script src="vendor/select2/select2.min.js">
+</script>
+<script src="script/index.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
