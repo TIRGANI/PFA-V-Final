@@ -28,6 +28,12 @@ public class Ferme {
 		this.photo = img;
 		this.user =user;
 	}
+	public Ferme(int numParcel, String img,User user) {
+
+		this.nbrParcel = numParcel;
+		this.photo = img;
+		this.user =user;
+	}
 	
 	public Ferme() {
 		
