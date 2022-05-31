@@ -8,21 +8,22 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-public class TestName /*implements CommandLineRunner*/ {
- /*   @Autowired
-    UserRepository userRepository;
+public class TestName implements CommandLineRunner {
     @Autowired
     RoleRepository roleRepository;
+    @Autowired
+    UserRepository userRepository;
+
     @Override
     public void run(String... args) throws Exception {
         userRepository.deleteAll();
-            User user = new User();
+      roleRepository.deleteAll();
+      Role admin = new Role("Administrateur");
+      Role agre = new Role("Agreculteur");
+      roleRepository.save(admin);
+      roleRepository.save(agre);
+      userRepository.save(new User("tirgani","123","tirgani@gmail.com",admin));
 
-            user.setRole(new Role("Administrateur"));
-            user.setUsername("tirgani");
-            user.setPassword("123");
-            System.out.println("User-W"+user.getUsername());
-            userRepository.save(user);
 
-    }*/
+    }
 }
