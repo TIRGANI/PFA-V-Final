@@ -18,12 +18,12 @@ public class TestName implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         userRepository.deleteAll();
-      roleRepository.deleteAll();
-      Role admin = new Role(1,"Administrateur");
+      
+      Role admin = new Role("Administrateur");
       Role agre = new Role(2,"Agreculteur");
 
       User tirgani = new User();
-      tirgani.setUserId(1);
+
       tirgani.setUsername("tirgani");
       tirgani.setPassword("123");
       tirgani.setEmail("tirgani.badreddine@gmail.com");
