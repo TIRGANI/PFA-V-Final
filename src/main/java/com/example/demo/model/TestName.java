@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@Component
-public class TestName implements CommandLineRunner {
-    @Autowired
+public class TestName /*implements CommandLineRunner*/ {
+ /*   @Autowired
     UserRepository userRepository;
     @Autowired
     RoleRepository roleRepository;
@@ -25,5 +24,5 @@ public class TestName implements CommandLineRunner {
             System.out.println("User-W"+user.getUsername());
             userRepository.save(user);
 
-    }
+    }*/
 }
