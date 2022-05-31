@@ -17,7 +17,7 @@ public class TestName implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         userRepository.deleteAll();
-        roleRepository.deleteAll();
+        //roleRepository.deleteAll();
       Role admin = new Role("Administrateur");
       Role agre = new Role("Agreculteur");
       roleRepository.save(admin);
