@@ -40,7 +40,14 @@ public class TestName implements CommandLineRunner {
             u=user;
             }
         }
-        fermeRepository.save(new Ferme(10,"img/fermes/ticketing.png",u));
+        for (Ferme ferme: fermeRepository.findAll()) {
+            if (!(ferme.getPhoto().equals("img/fermes/ticketing.png")))
+            {
+                fermeRepository.save(new Ferme(10,"img/fermes/ticketing.png",u));
+            }
+
+        }
+
 
     }
 }
