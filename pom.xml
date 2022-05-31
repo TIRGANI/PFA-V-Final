@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>test</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3</version>
 	<name>test</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -46,12 +46,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- unit test rest -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 
 		<!-- test patch operation need this -->
 		<dependency>

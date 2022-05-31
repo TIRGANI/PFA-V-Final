@@ -30,6 +30,7 @@ public class FileImageUploadController {
         String namef = "img/parcelles/"+file.getOriginalFilename();
         Files.copy(file.getInputStream(), Paths.get(Path_Directory+ File.separator+file.getOriginalFilename()));
         return namef;
+
     }
     @PostMapping("load-plantes")
     public String uploadImagePlantes(@RequestParam("file")MultipartFile file) throws Exception {
