@@ -34,17 +34,45 @@ public class TestName implements CommandLineRunner {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("PST"));
         Date date = simpleDateFormat.parse("01/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 22,date,parcelle1));
+
         Date date1 = simpleDateFormat.parse("02/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 30,date1,parcelle1));
+
         Date date2 = simpleDateFormat.parse("03/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 37,date2,parcelle1));
+
         Date date3 = simpleDateFormat.parse("04/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 10,date3,parcelle1));
+
         Date date4 = simpleDateFormat.parse("05/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 5,date4,parcelle1));
+
         Date date5 = simpleDateFormat.parse("06/05/2022");
-        grandeurRepository.save(new Grandeur("temperature", (float) 10,date5,parcelle1));
+        Grandeur g1 = new Grandeur("temperature", (float) 22,date,parcelle1);
+        g1.setType("temperature");
+        g1.setValeur((float) 23);
+        g1.setDate(date);
+        g1.setParcelle(parcelle1);
+        Grandeur g2 = new Grandeur();
+        g2.setType("temperature");
+        g2.setDate(date1);
+        g2.setParcelle(parcelle1);
+        Grandeur g3 = new Grandeur();
+        g3.setType("temperature");
+        g3.setValeur((float) 37);
+        g3.setDate(date2);
+        g3.setParcelle(parcelle1);
+        Grandeur g4 = new Grandeur();
+        g4.setType("temperature");
+        g4.setValeur((float) 10);
+        g4.setDate(date3);
+        g4.setParcelle(parcelle1);
+        Grandeur g5 = new Grandeur();
+        g5.setType("temperature");
+        g5.setValeur((float) 32);
+        g5.setDate(date4);
+        g5.setParcelle(parcelle1);
+        grandeurRepository.save(g1);
+        grandeurRepository.save(g2);
+        grandeurRepository.save(g3);
+        grandeurRepository.save(g4);
+        grandeurRepository.save(g5);
 
 
      /* Role admin = new Role("Administrateur");
