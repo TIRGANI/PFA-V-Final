@@ -33,7 +33,7 @@ public class TestName implements CommandLineRunner {
       userRepository.save(tirgani);*/
       //  Role agre = new Role("Agreculteur");
       //  roleRepository.save(agre);
-        User u = new User();
+    /*    User u = new User();
         for (User user: userRepository.findAll()) {
             if (user.getUsername().equals("tirgani"))
             {
@@ -47,7 +47,7 @@ public class TestName implements CommandLineRunner {
             }
 
         }
-
+*/
 
     }
 }

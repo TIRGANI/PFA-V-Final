@@ -46,46 +46,47 @@ $(document)
                                 var file = $('#photo')[0].files[0]
                                 var fd = new FormData();
                                 fd.append('file', file);
+                                /*    $.ajax({
+                                        url: '/load-ferme',
+                                        type: 'POST',
+                                        processData: false,
+                                        contentType: false,
+                                        data: fd,
+                                        success: function (photo, status, jqxhr) {
+    */
+                                var p = {
+                                    numParcel: nbrparcelle.val(),
+                                    photo: "/img/ferme/photo.jpg",
+                                    user: {
+                                        userId: userid
+                                    }
+                                };
                                 $.ajax({
-                                    url: '/load-ferme',
+                                    url: 'ferme/saves',
+                                    contentType: "application/json",
+                                    dataType: "json",
+                                    data: JSON.stringify(p),
                                     type: 'POST',
-                                    processData: false,
-                                    contentType: false,
-                                    data: fd,
-                                    success: function (photo, status, jqxhr) {
-
-                                        var p = {
-                                            numParcel: nbrparcelle.val(),
-                                            photo: photo,
-                                            user: {
-                                                userId: userid
-                                            }
-                                        };
-                                        $.ajax({
-                                            url: 'ferme/saves',
-                                            contentType: "application/json",
-                                            dataType: "json",
-                                            data: JSON.stringify(p),
-                                            type: 'POST',
-                                            async: true,
-                                            success: function (data, textStatus,
-                                                               jqXHR) {
-                                                table.ajax.reload();
-                                            },
-                                            error: function (jqXHR, textStatus,
-                                                             errorThrown) {
-                                                console.log(textStatus);
-                                            }
-                                        });
-
-                                        //  table.ajax.reload();
+                                    async: true,
+                                    success: function (data, textStatus,
+                                                       jqXHR) {
+                                        table.ajax.reload();
                                     },
-                                    error: function (jqxhr, status, msg) {
-                                        //error code
+                                    error: function (jqXHR, textStatus,
+                                                     errorThrown) {
+                                        console.log(textStatus);
                                     }
                                 });
 
+                                //  table.ajax.reload();
+                                /* },
+                             /*    error: function (jqxhr, status, msg) {
+                                     //error code
+                                 }
+                           /*  });
 
+
+                         }*/
                             }
                             $("#main-content").load(
                                 "./page/ferme.html");
