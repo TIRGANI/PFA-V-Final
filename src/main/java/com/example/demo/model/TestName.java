@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 import com.example.demo.repository.*;
-import jdk.internal.org.objectweb.asm.tree.FrameNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
