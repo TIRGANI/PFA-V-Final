@@ -36,6 +36,13 @@ public class Grandeur {
 		this.date = date;
 		this.parcelle= parcelle;
 	}
+	public Grandeur(String type, Float valeur, Date date,Parcelle parcelle) {
+
+		this.type = type;
+		this.valeur = valeur;
+		this.date = date;
+		this.parcelle= parcelle;
+	}
 	public int getId() {
 		return id;
 	}
