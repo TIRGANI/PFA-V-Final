@@ -88,19 +88,19 @@ $(document)
                         var file = $('#photo')[0].files[0]
                         var fd = new FormData();
                         fd.append('file', file);
-                        $.ajax({
+                     /*   $.ajax({
                             url: '/load-parcelle',
                             type: 'POST',
                             processData: false,
                             contentType: false,
                             data: fd,
-                            success: function (photo, status, jqxhr) {
+                            success: function (photo, status, jqxhr) {*/
 
 
                                 var m = {
 
                                     surface: surface.val(),
-                                    photo: photo,
+                                    photo: "img/parcelle/photo.jpg",
                                     ferme: {
                                         id: fermes.val(),
                                     },
@@ -129,8 +129,8 @@ $(document)
                                 $("#main-content").load(
                                     "./page/parcelle.html");
                             }
-                        });
-                    }
+                      /*  });
+                    }*/
                 });
             $('#table-content')
                 .on(

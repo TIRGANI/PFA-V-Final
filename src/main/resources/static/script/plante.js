@@ -72,13 +72,13 @@ $(document)
                         var file = $('#photo')[0].files[0]
                         var fd = new FormData();
                         fd.append('file', file);
-                        $.ajax({
+                     /*   $.ajax({
                             url: '/load-plantes',
                             type: 'POST',
                             processData: false,
                             contentType: false,
                             data: fd,
-                            success: function (photo, status, jqxhr) {
+                            success: function (photo, status, jqxhr) {*/
 
                                 var m = {
                                     libelle: libelle.val(),
@@ -107,8 +107,8 @@ $(document)
                                 $("#main-content").load(
                                     "./page/plante.html");
                             }
-                        });
-                    }
+                       /* });
+                    }*/
                 });
             $('#table-content')
                 .on(
