@@ -22,7 +22,7 @@ public class TestName implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
       //  userRepository.deleteAll();
-        Parcelle parcelle1 = new Parcelle();
+     /*   Parcelle parcelle1 = new Parcelle();
         for (Parcelle parcelle: parcelleRepository.findAll()) {
             if (parcelle.getId()==1)
             {
@@ -73,7 +73,7 @@ public class TestName implements CommandLineRunner {
         grandeurRepository.save(g4);
         grandeurRepository.save(g5);
 
-
+*/
      /* Role admin = new Role("Administrateur");
       Role agre = new Role(2,"Agreculteur");
 
